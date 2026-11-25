@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="outer">
+    <form class="bar" id="form" novalidate>
+      <input class="cell" id="name" placeholder="Enter task name" aria-label="Task name" maxlength="120">
+      <input class="cell" id="due" type="date" aria-label="Due date">
+      <button class="cell submit" type="submit">Submit</button>
+    </form>
+    <p class="err" id="err" role="alert"></p>
+
+    <section class="table" aria-label="Tasks">
+      <div class="row head">
+        <div class="c sn">S.no</div>
+        <div class="c">Task</div>
+        <div class="c">Date</div>
+        <div class="c actions">Actions</div>
+      </div>
+
+      <div id="rows"></div>
+      <div class="foot" id="foot" hidden></div>
+    </section>
+  </main>
+</body>
+</html>
